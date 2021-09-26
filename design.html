@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计原则</title>
+    <link href="./AIITUI.css" rel="stylesheet" />
+    <style>
+        .body {
+            width: 60%;
+        }
+
+        .body>div {
+            margin-bottom: 50px;
+        }
+
+        h5 {
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0 0 18px;
+            color: #1f2d3d;
+        }
+
+        .desc {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #99a9bf;
+            list-style: none;
+        }
+
+        .total-desc {
+            font-size: 15px;
+            color: #687990;
+            font-weight: 300;
+        }
+
+        h5::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            vertical-align: middle;
+            background-color: #5e6d82;
+            margin-right: 5px;
+        }
+        .title::before{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-continer">
+            <a href="./index.html">
+                <img src="./logo.jpeg" width="38px">
+                <span class="logo-name">AIITUI</span>
+            </a>
+        </div>
+        <div class="guid-list">
+            <div id="design">设计原则</div>
+            <div>组件指南</div>
+            <div>参与人员</div>
+        </div>
+    </div>
+
+    <div class="body">
+
+        <h5 class="title">设计原则</h5>
+        <div class="total-desc">在AIITUI的设计过程中，我们期望其可以不受束缚，可以运行在任意的主流浏览器环境中。同时虽然我们
+            力求完美了提供了数十种组件，但是前端需求变化万千，无法做到面面俱到，因此我们暴露了一些内部接口，当
+            用户的需求无法满足的时候，开发者可以通过这些接口方便快捷地创作自己独特的组件。
+        </div>
+        <div>
+            <h5>原生性</h5>
+            <div class="desc">不依赖与市场上的任何前端框架，全部组件使用原生的JavaScript。</div>
+        </div>
+        <div>
+            <h5>丰富性</h5>
+            <div class="desc">AIITUI提供了数十种不同的组件，适用于各种场景。</div>
+        </div>
+        <div>
+            <h5>易用性</h5>
+            <div class="desc">只需要调用对应方法，传入相应参数即可使用AIITUI。</div>
+        </div>
+        <div>
+            <h5>灵活性</h5>
+            <div class="desc">AIITUI提供了一些接口，帮助用户自行搭建个性化组件。</div>
+        </div>
+    </div>
+
+    <script src="./AIITUI.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
